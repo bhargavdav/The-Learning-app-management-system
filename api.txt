@@ -1,0 +1,54 @@
+URL::: http://localhost/learning/api.php
+method::: POST
+====================First API========================
+get_category
+action:get_category
+Output:
+{
+    "get_categorey": [
+        {
+            "id": "1",
+            "name": "English",
+            "image": "http://localhost/learning/images/1708673310_bg-11.jpg",
+            "status": "active"
+        },
+        {
+            "id": "2",
+            "name": "Maths",
+            "image": "http://localhost/learning/images/1708673319_bg-14.jpg",
+            "status": "active"
+        }
+    ],
+    "status": "success",
+    "message": "Successfully"
+}
+
+=========================Second API=========================
+get_couse
+action:get_couse
+cat_id:1(action:get_category(id:1))
+output:
+{
+    "get_course": [
+        {
+            "id": "1",
+            "name": "Aerospace",
+            "image": "http://localhost/learning/images/1708675121_bg-12.jpg",
+            "level": "middium",
+            "enroll status": "0",
+            "description": "<p>sjagdjusa jshaujfdw&nbsp;</p>\r\n",
+            "status": "Active"
+        },
+        {
+            "id": "1",
+            "name": "Defence",
+            "image": "http://localhost/learning/images/1709028623_bg-13.jpg",
+            "level": "Biggining",
+            "enroll status": "1",
+            "description": "<p>demo data</p>\r\n",
+            "status": "Active"
+        }
+    ],
+    "status": "success",
+    "message": "Successfully"
+}
